@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="p-5 bg-white rounded shadow-sm text-center">
+    <h1 class="display-5">Sistema de Locação de Carros</h1>
+    <a href="{% url 'locacoes:nova' %}" class="btn btn-primary btn-lg">Nova locação</a>
+</div>
+{% endblock %}

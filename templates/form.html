@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block conteudo %}
+<div class="card shadow-sm col-md-6 mx-auto">
+<div class="card-body">
+<h4 class="card-title mb-3">Cadastro</h4>
+<form method="post">
+{% csrf_token %}
+{% bootstrap_form form %}
+<button type="submit" class="btn btn-success">Salvar</button>
+</form>
+</div>
+</div>
+{% endblock %}
